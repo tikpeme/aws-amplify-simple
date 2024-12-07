@@ -24,5 +24,4 @@ yarn-error.log*
 
 # amplify
 .amplify
-amplify_outputs*
 amplifyconfiguration*
