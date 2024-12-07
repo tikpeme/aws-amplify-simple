@@ -14,6 +14,7 @@
     "react-dom": "^18.0.0",
     "react-oidc-context": "^3.2.0",
     "react-scripts": "5.0.1",
+    "typescript": "^5.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,7 +48,6 @@
     "aws-cdk-lib": "^2.172.0",
     "constructs": "^10.4.2",
     "esbuild": "^0.24.0",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
+    "tsx": "^4.19.2"
   }
 }
