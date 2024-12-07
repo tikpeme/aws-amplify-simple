@@ -1,21 +1,19 @@
-import React from "react";
-import { AmplifyProvider } from "@aws-amplify/ui-react";
-import { Authenticator } from "@aws-amplify/ui-react";
+import { useAuthenticator } from "@aws-amplify/ui-react";
+import { useEffect, useState } from "react";
+import { generateClient } from "aws-amplify/data";
 
-import "@aws-amplify/ui-react/styles.css";
+const client = generateClient();
 
 function App() {
+  const { signOut } = useAuthenticator();
+
+  // ...
+
   return (
-    <AmplifyProvider>
-      <Authenticator>
-        {({ signOut, user }) => (
-          <div>
-            <h1>Welcome, {user?.username}</h1>
-            <button onClick={signOut}>Sign Out</button>
-          </div>
-        )}
-      </Authenticator>
-    </AmplifyProvider>
+    <main>
+      {/* ... */}
+      <button onClick={signOut}>Sign out</button>
+    </main>
   );
 }
 
